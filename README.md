@@ -11,3 +11,7 @@
 * **A special constructor is provided to create a linked hash map whose order of iteration is the order in which its entries were last accessed, from least-recently accessed to most-recently (access-order). This kind of map is well-suited to building LRU caches.**
 
 * 构造函数中的中的 accessOrder 参数可提供使LinkedHashMap根据访问顺序排序的能力， 非常适合实现LRU
+
+* **Like HashMap, it provides constant-time performance for the basic operations (add, contains and remove), assuming the hash function disperses elements properly among the buckets. Performance is likely to be just slightly below that of HashMap, due to the added expense of maintaining the linked list, with one exception: Iteration over the collection-views of a LinkedHashMap requires time proportional to the size of the map, regardless of its capacity. Iteration over a HashMap is likely to be more expensive, requiring time proportional to its capacity.**
+
+* LinkedHashMap的基本操作（add.contains,remove)提供常数阶的性能（前提是元素正确分布在桶数组上--与HasmMap类似）。另外，由于维护链表的额外开销，LinkedHashMap的性能可能会略低于HashMap，但在迭代(Iterator）的情况下则例外， 因LinkedHashMap的迭代性能与其中的元素个数成正比，而与其桶数据的容量无关。HashMap的迭代器则是与其桶数据的容量成正比的。

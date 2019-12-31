@@ -19,4 +19,4 @@
 
 * **A linked hash map has two parameters that affect its performance: initial capacity and load factor. They are defined precisely as for HashMap. Note, however, that the penalty for choosing an excessively high value for initial capacity is less severe for this class than for HashMap, as iteration times for this class are unaffected by capacity.**
 
-*正因为LinkedHashMap的迭代性能与其容量无关，因此为其选择一个更大的初始容量所造成的负面影响（迭代性能更差）比HashMap要小。
+* 正因为LinkedHashMap的迭代性能与其容量无关，因此为其选择一个更大的初始容量所造成的负面影响（迭代性能更差）比HashMap要小。
